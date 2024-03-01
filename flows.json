@@ -1,0 +1,953 @@
+[
+    {
+        "id": "505de08b963b3a23",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7a97228176a3408a",
+        "type": "group",
+        "z": "505de08b963b3a23",
+        "name": "CRUD Avatars",
+        "style": {
+            "fill": "#bfdbef",
+            "label": true
+        },
+        "nodes": [
+            "43bfe33e6a378328",
+            "a298efd64088f5a0",
+            "39802f352be3083e",
+            "6e7b6a07eb0c5dc0",
+            "b570594b2c92e3c0",
+            "aa1e0752d37c7b39",
+            "f7641d49ab6ba0e4",
+            "96b5ed9783a4a440",
+            "4376972e7209e2ec",
+            "7fe216677821ddd5",
+            "444098b8562acd7b",
+            "5862302fb38e1d7a",
+            "000c2b03b0dfc19e",
+            "a84dd7f56aa89c8d",
+            "df170f6c217565e6",
+            "6c7d66aa5c729d7b",
+            "e1a4a227148090a8",
+            "25fbfab556855406",
+            "11c43033edb6814f",
+            "e12d1cc87a6fa9be",
+            "cd45a3915eb3e765",
+            "9495f99fe09e751a",
+            "f1e2d789a1a7b92f",
+            "fdd8a17f7ca948d1",
+            "ed6187075b52d3e1",
+            "44d601641c19f080",
+            "03d1b6dbc51ce0d7",
+            "122575676cab76ca",
+            "93ace29d77f702db",
+            "35382b479daaa177"
+        ],
+        "x": 32.119140625,
+        "y": 119,
+        "w": 1673.880859375,
+        "h": 322
+    },
+    {
+        "id": "b7ab102cf9517aa7",
+        "type": "http in",
+        "z": "505de08b963b3a23",
+        "name": "",
+        "url": "/css",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 100,
+        "y": 40,
+        "wires": [
+            [
+                "ec25cd2e1b3a4c03"
+            ]
+        ]
+    },
+    {
+        "id": "bd563a0724955d05",
+        "type": "http response",
+        "z": "505de08b963b3a23",
+        "name": "",
+        "statusCode": "",
+        "headers": {
+            "content-type": "text/css"
+        },
+        "x": 430,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "ec25cd2e1b3a4c03",
+        "type": "template",
+        "z": "505de08b963b3a23",
+        "name": "customCSS",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "css",
+        "syntax": "mustache",
+        "template": "@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Press+Start+2P&display=swap');\n\n\nbody div {\n  padding: 0 !important;\n }\n\n.t--widget-containerwidget {\n  top:0 !important;\n  left: 0 !important; \n  height: 100vh !important;\n}\n.canvas {\n  height:inherit !important; \n}\n\n/* __________LEFT SIDE__________________ */\n.title .bp3-ui-text {\n   font-family: 'Press Start 2P', sans-serif !important;\n   font-size: clamp(20px, 1.87vw, 50px) !important; \n   color: #ffffff !important;\n   cursor: default !important;\n}\n.subtitle .bp3-ui-text {\n   font-family: 'Caveat', sans-serif !important;\n   font-size: clamp(15px, 1.75vw, 30px) !important; \n   color: #ffffff !important;\n   cursor: default !important;\n}\n\n.content_container {\nbackground-color: #52ACFF !important;\nbackground-image: linear-gradient(180deg, #52ACFF 25%, #FFE32C 100%) !important;\nheight: 100vh !important;\ntop:0 !important;\nleft: 0 !important;\nwidth: 45% !important;\n\n\n}\n.bot_image > div > div > div > div > div > div > div {\n    animation: float 34s linear 0s infinite normal none;\n    transform-origin: 50% 50%;\n    z-index: 1 !important;\n}\n\n@keyframes float {\n    0%, 100% {\n        transform: translateX(0%) translateY(0%);\n    }\n\n    15% {\n        transform: translateX(-30px) translateY(-30px) rotate(4deg);\n    }\n\n    30% {\n        transform: translateX(15px) translateY(25px) rotate(-4deg);\n    }\n\n    45% {\n        transform: translateX(-15px) translateY(-15px) rotate(-3.6deg);\n    }\n\n    60% {\n        transform: translateX(9px) translateY(15px) rotate(-2.4deg);\n    }\n\n    75% {\n        transform: translateX(-6px) translateY(-10px) rotate(1.2deg);\n    }\n}\n.t--widget-containerwidget .technology_container  {\nbottom: 100 !important;\ntop: calc(100vh - 160px) !important;\nwidth:100% !important;\n}\n.technology_container > div > div > div > div > div > div > div > div > div > div > div > div > div {\n  display: flex !important;\n  justify-content: space-around !important;\n}\n.technology_container > div > div > div > div > div > div > div > div > div > div > div > div > div div {\n  position: static !important;\n}\n\n/* __________RIGHT SIDE__________________ */\n.user_info_tabs {\nbackground-color: #FFFFFF !important;\nheight: 100vh !important;\ntop:0 !important;\nwidth: 55% !important;\nleft: 45% !important;\nborder: none !important;\n}\n.user_info_tabs > div > div > div > div > div > div > div > div > div > div > div > div > div  {\n  position: relative !important;\n  width: 100% !important;\n  height: 100vh !important;\n}\n.gradient_container {\n  --border-width: 3px;\n\n  position: absolute !important;\n  top: 50% !important;\n  left: 50% !important;\n  transform: translate(-50%, -50%) !important;\n  height: fit-content !important;\n  max-height: 90% !important;\n  width: 80% !important;\n  \n}\n\n.gradient_container::after {\n    position: absolute;\n    content: \"\";\n    top: calc(-1 * var(--border-width));\n    left: calc(-1 * var(--border-width));\n    z-index: -1;\n    width: calc(100% + var(--border-width) * 2);\n    height: calc(100% + var(--border-width) * 2);\n    background: linear-gradient(\n      60deg,\n      hsl(201, 96%, 56%),\n      hsl(201, 100%, 70%),\n      hsl(60, 91%, 82%),\n      hsl(75, 67%, 95%),\n      hsl(0, 0%, 99%)\n    );\n    background-size: 300% 300%;\n    background-position: 0 50%;\n    border-radius: 10px;\n    animation: moveGradient 5s alternate infinite;\n  }\n\n@keyframes moveGradient {\n  50% {\n    background-position: 100% 50%;\n  }\n}\n.gradient_container > div > div > div > div > div > div > div > div > div > div {\n  height: fit-content !important;\n  max-height: 90% !important;\n}\n.gradient_container > div > div > div > div > div > div > div > div > div > div > div > div > div{\n  display: flex !important;\n  gap: clamp(21px, 2.5vw, 40px) !important;\n  align-items: center !important;\n  flex-direction: column !important;\n}\n.gradient_container > div > div > div > div > div > div > div > div > div > div > div > div > div div:not(:last-child) {\n  position: static !important;\n  width: 100% !important;\n  padding-left: 10px !important;\n  padding-right: 10px !important;\n}\n.gradient_container > div > div > div > div > div > div > div > div > div > div > div > div > div div:last-child {\n  position: static !important;\n \n}\n.gradient_container .uploader_container> div > div > div > div > div > div > div > div > div > div > div > div > div>div{\n  height: fit-content !important;\n \n}\n.gradient_container .uploader_container{\n  height: 72px !important;\n  position: relative !important;\n}\n.gradient_container .btn_container{\n  position: relative !important;\n  height: 60px !important;\n  width: 100% !important;\n \n}\n.gradient_container .btn_container .next_btn{\n    position: absolute !important;\n    top: unset !important;\n    bottom: 10px !important;\n    right: 10px !important;\n    left: unset !important;\n    width: 100px !important;\n}\n.next_btn span{\n    color: #FFFFFF !important;\n    \n}\n.next_btn button {\n  height: 40px !important;\n  width: 100px !important;\n  position: absolute;\n  top: calc(100% - 19px) !important;\n  right: 0px !important;\n}\n\n.next_btn button::after,.next_btn div::after, .previous_btn button::after,.previous_btn div::after,.add_btn button::after,.add_btn div::after, .action_btn button::after,.action_btn div::after, .delete_avatar_btn button::after,.delete_avatar_btn div::after {\n  position: static !important;\n  \n}\n.gradient_container .btn_container .previous_btn{\n    position: absolute !important;\n    top: unset !important;\n    bottom: 10px !important;\n    left: 10px !important;\n    right: unset !important;\n    width: 100px !important;\n}\n.previous_btn button {\n  height: 40px !important;\n  width: 100px !important;\n  position: absolute;\n  top: calc(100% - 19px) !important;\n  left: 0px !important;\n}\n.gradient_container .uploader_container .add_btn{\n  height: 40px !important;\n  width: 40px !important;\n  \n}\n.add_btn button {\n  height: 40px !important;\n  width: 40px !important;\n  margin-top: 19px;\n  position: static !important;\n}\n.add_btn button:hover {\n  background-color: #52ACFF !important;\n}\n.delete_avatar_btn button{\n   height: 40px !important;\n  width: 40px !important;\n  position: absolute !important;\n  top: 64% !important;\n  left: 30% !important;\n  z-index: -1 !important;\n  opacity: 0 !important;\n  transition: opacity 0.3s ease !important;\n}\n.actors_item_container:hover > div > div > div > div > div > div> div > div > div > div > div > div > div > div.delete_avatar_btn button {\n  z-index: 1 !important;\n  opacity: 1 !important;\n}\n.gradient_container .btn_container .action_btn{\n    position: absolute !important;\n    top: unset !important;\n    bottom: 10px !important;\n    left: 10px !important;\n    right: unset !important;\n    width: 100px !important;\n}\n.action_btn button {\n  height: 40px !important;\n  width: 250px !important;\n  position: absolute;\n  top: calc(100% - 19px) !important;\n  left: 0px !important;\n}\n\n.gradient_container .uploader_container > div > div > div > div > div > div > div > div > div > div > div > div > div {\n  display: flex !important;\n  flex-direction: row !important;\n  justify-content: space-between !important;\n  align-items: flex-end !important;\n  gap: 10px !important;\n}\n.gradient_container .uploader_container > div > div > div > div > div > div > div > div > div > div > div > div > div div {\n padding: 0 !important;\n}\n.gradient_container .actors_list {\n  height: clamp(170px, 17vw, 270px) !important;\n}\n\n.actors_list .custom-wrapper-canvas-list{\n  display: flex !important;\n  flex-direction: row !important;\n  justify-content: center !important;\n  align-items: center !important;\n  flex-wrap: wrap !important;\n  \n}\n\n.actors_list .actors_item_container .actor {\n  border: 2px solid #eceff192 !important;\n  border-radius: 50% !important;\n  height: 120px !important;\n  width: 120px !important;\n  padding-left: 0px !important;\n  padding-right: 0px !important;\n}\n.actors_list .actors_item_container .actor:hover{\n  border: 2px solid #f0b411 !important;\n}\n.actors_list .actors_item_container .selected_actor {\n  border: 2px solid #f0b411 !important;\n  border-radius: 50% !important;\n  height: 120px !important;\n  width: 120px !important;\n  padding-left: 0px !important;\n  padding-right: 0px !important;\n \n}\n.actors_list .actor>div>div>div>div>div>div>div {\nborder-radius: 50% !important;\n}\n.actors_list .bp3-icon-plus{\n    display: none !important;\n}\n.actors_list.actors_item_container>div>div>div>div>div>div>div>div>div>div>button{\n    display: none !important;\n}\n\n.gradient_container .actors_list .actors_item_container{\n    width: 150px !important;\n    height:150px !important;\n}\n.gradient_container .actors_list .actors_item_container>div>div>div>div>div>div>div>div>div>div>div>div>div{\n    position:relative !important;\n    \n}\n.step4_title{\n  margin-top: 10px !important;\n}\n.gradient_container.final_container > div > div > div > div > div > div > div > div > div > div > div > div > div{\n gap: clamp(10px, 1.8vw, 20px) !important;\n}\n.rainbow-text {\n  background-image: linear-gradient(247deg, #52ACFF 25%, #FFE32C 100%);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n.gradient_container .final_input > div > div > div > div div:first-child{\nflex: 1 !important;\nwidth: 150px !important;\npadding-left: 0px !important;\npadding-right: 0px !important;\nmargin-right: 0px !important;\n}\n.gradient_container .final_input > div > div > div > div div:last-child{\nflex: 0 0 calc(100% - 52px) !important;\npadding-left: 0px !important;\npadding-right: 0px !important;\n\n}\n.gradient_container .final_img_container{\n  height: 90px !important;\n}\n.gradient_container .final_img_container > div > div > div > div > div > div > div > div > div > div > div > div > div {\n    display: flex !important;\n    flex-direction: row-reverse !important;\n    justify-content: start !important;\n    align-items: flex-start !important;\n    gap: 26px !important;\n    \n}\n\n.gradient_container .final_img_container .final_img {\n  border: 2px solid #f0b411 !important;\n  border-radius: 50% !important;\n  height: 80px !important;\n  width: 80px !important;\n  padding-left: 0px !important;\n  padding-right: 0px !important;\n \n}\n.gradient_container .final_img_container .final_img>div>div>div>div>div>div>div {\nborder-radius: 50% !important;\n}\n\n.bp3-input:disabled {\n    background-color: rgb(126 191 255);\n    background-image: linear-gradient(247deg, #52acff6e 25%, #ffe32c6e 100%) !important;\n    color: rgb(9, 9, 9);\n}\n.bp3-input, .select-button {\n    border-radius: 5px !important;\n}",
+        "output": "str",
+        "x": 270,
+        "y": 40,
+        "wires": [
+            [
+                "bd563a0724955d05"
+            ]
+        ]
+    },
+    {
+        "id": "43bfe33e6a378328",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "deleteAvatarById",
+        "func": "msg.collection = 'avatars';\nmsg.query = {\n    _id: objectid(msg.payload._id)\n}\ndelete msg.payload._id\nmsg.payload = {\n    $set: {\n        deleted: true\n    }\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 370,
+        "y": 340,
+        "wires": [
+            [
+                "39802f352be3083e"
+            ]
+        ]
+    },
+    {
+        "id": "a298efd64088f5a0",
+        "type": "http in",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "url": "/deleteAvatar",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 148.119140625,
+        "y": 338.875,
+        "wires": [
+            [
+                "43bfe33e6a378328"
+            ]
+        ]
+    },
+    {
+        "id": "39802f352be3083e",
+        "type": "link call",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "links": [
+            "4858d251cc2afe5c"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 560,
+        "y": 340,
+        "wires": [
+            [
+                "6e7b6a07eb0c5dc0"
+            ]
+        ]
+    },
+    {
+        "id": "6e7b6a07eb0c5dc0",
+        "type": "http response",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 730,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "b570594b2c92e3c0",
+        "type": "http in",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "url": "/uploadAvatar",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "f7641d49ab6ba0e4"
+            ]
+        ]
+    },
+    {
+        "id": "aa1e0752d37c7b39",
+        "type": "http response",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 930,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f7641d49ab6ba0e4",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "create avatar object",
+        "func": "msg.collection = 'avatars';\n\nconst thumbnail_url = msg.payload.userUrl;\nlet avatar = { \n    createdAt: Date.now(),\n    presenter_id: objectid(), \n    thumbnail_url,\n    source: \"user\",\n    selected:false,\n    deleted: false };\nmsg.payload = avatar;\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 380,
+        "y": 160,
+        "wires": [
+            [
+                "96b5ed9783a4a440"
+            ]
+        ]
+    },
+    {
+        "id": "96b5ed9783a4a440",
+        "type": "link call",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "links": [
+            "850f26bd11c45c81"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 560,
+        "y": 160,
+        "wires": [
+            [
+                "4376972e7209e2ec"
+            ]
+        ]
+    },
+    {
+        "id": "4376972e7209e2ec",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "return avatar",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 160,
+        "wires": [
+            [
+                "aa1e0752d37c7b39"
+            ]
+        ]
+    },
+    {
+        "id": "7fe216677821ddd5",
+        "type": "http in",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "url": "/getAllAvatars",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 280,
+        "wires": [
+            [
+                "6c7d66aa5c729d7b"
+            ]
+        ]
+    },
+    {
+        "id": "444098b8562acd7b",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "fetchActors",
+        "func": "msg.collection = 'avatars';\nconst BASE_URL = \"https://api.d-id.com/clips/presenters\";\nconst key = msg.payload.key;\n\nmsg.headers = {\n    \"accept\": \"application/json\",\n    \"Authorization\": `Bearer  ${key}`\n}\nmsg.method = \"GET\";\n\nmsg.url = `${BASE_URL}`;\n\n\nmsg.payload = {};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 350,
+        "y": 220,
+        "wires": [
+            [
+                "000c2b03b0dfc19e"
+            ]
+        ]
+    },
+    {
+        "id": "5862302fb38e1d7a",
+        "type": "http response",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1630,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "000c2b03b0dfc19e",
+        "type": "http request",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 570,
+        "y": 220,
+        "wires": [
+            [
+                "a84dd7f56aa89c8d"
+            ]
+        ]
+    },
+    {
+        "id": "a84dd7f56aa89c8d",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "checkExistenceActorsInDb",
+        "func": "if (msg.statusCode == 200) {\n    let presenters=msg.payload.presenters;\n    let actors = presenters.map(presenter => {\n        // Витягуємо необхідні дані для створення об'єкта actor\n        let { presenter_id, thumbnail_url } = presenter;\n\n        // Створюємо об'єкт actor\n        return {\n            createdAt: Date.now(),\n            presenter_id,\n            thumbnail_url,\n            source: \"d_id\",\n            selected: false,\n            deleted: false\n        };\n    });\n    msg.actors = actors;\n    // Записуємо actors в msg.payload\n    msg.payload = {\n        presenter_id: { $in: msg.actors.map(actor => actor.presenter_id) }\n    }\n   return msg;\n} else {\n    msg.payload = {\n        type: 'message',\n        content: \"ERROR. Sorry, something went wrong 😞\",\n       \n    }\n\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 220,
+        "wires": [
+            [
+                "cd45a3915eb3e765"
+            ]
+        ]
+    },
+    {
+        "id": "df170f6c217565e6",
+        "type": "http in",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "url": "/getActors",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 220,
+        "wires": [
+            [
+                "444098b8562acd7b"
+            ]
+        ]
+    },
+    {
+        "id": "6c7d66aa5c729d7b",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "sort Avatars",
+        "func": "msg.collection = 'avatars';\nmsg.payload = {\n    deleted: false\n};\nmsg.sort = { 'createdAt': -1 };\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 280,
+        "wires": [
+            [
+                "25fbfab556855406"
+            ]
+        ]
+    },
+    {
+        "id": "e1a4a227148090a8",
+        "type": "http response",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 950,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "25fbfab556855406",
+        "type": "link call",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "links": [
+            "2ea4d611b4476b64"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 550,
+        "y": 280,
+        "wires": [
+            [
+                "122575676cab76ca"
+            ]
+        ]
+    },
+    {
+        "id": "11c43033edb6814f",
+        "type": "link call",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "links": [
+            "850f26bd11c45c81"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1320,
+        "y": 180,
+        "wires": [
+            [
+                "e12d1cc87a6fa9be"
+            ]
+        ]
+    },
+    {
+        "id": "e12d1cc87a6fa9be",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "return actors",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1470,
+        "y": 180,
+        "wires": [
+            [
+                "5862302fb38e1d7a"
+            ]
+        ]
+    },
+    {
+        "id": "cd45a3915eb3e765",
+        "type": "link call",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "links": [
+            "2ea4d611b4476b64"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1010,
+        "y": 220,
+        "wires": [
+            [
+                "9495f99fe09e751a"
+            ]
+        ]
+    },
+    {
+        "id": "9495f99fe09e751a",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "condition",
+        "func": "if (msg.payload.length > 0) {\n    msg.statusCode = 200;\n    return [null, msg]\n} else {\n    msg.payload = msg.actors\n    return [msg, null]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 220,
+        "wires": [
+            [
+                "11c43033edb6814f"
+            ],
+            [
+                "f1e2d789a1a7b92f"
+            ]
+        ]
+    },
+    {
+        "id": "f1e2d789a1a7b92f",
+        "type": "http response",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1310,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "fdd8a17f7ca948d1",
+        "type": "http in",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "url": "/selectAvatar",
+        "method": "put",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 400,
+        "wires": [
+            [
+                "44d601641c19f080"
+            ]
+        ]
+    },
+    {
+        "id": "ed6187075b52d3e1",
+        "type": "http response",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1110,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "44d601641c19f080",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "setSelectedTrue",
+        "func": "msg.collection = 'avatars';\n\nmsg.query = {\n    _id: objectid(msg.payload._id)\n};\nmsg.target = {\n    _id: objectid(msg.payload._id)\n};\n\nmsg.payload = {\n    $set: {\n        selected: true\n    }\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 360,
+        "y": 400,
+        "wires": [
+            [
+                "03d1b6dbc51ce0d7"
+            ]
+        ]
+    },
+    {
+        "id": "03d1b6dbc51ce0d7",
+        "type": "link call",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "links": [
+            "4858d251cc2afe5c"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 560,
+        "y": 400,
+        "wires": [
+            [
+                "93ace29d77f702db"
+            ]
+        ]
+    },
+    {
+        "id": "122575676cab76ca",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "returnStatusCode",
+        "func": "if (msg.payload.length > 0) {\n    msg.statusCode = 200;\n    return [msg, null]\n} else {\n    return [null, msg]\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 280,
+        "wires": [
+            [
+                "e1a4a227148090a8"
+            ]
+        ]
+    },
+    {
+        "id": "93ace29d77f702db",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "setSelectedFalse",
+        "func": "msg.multi = true;\nmsg.upsert = false;\nmsg.query = {\n    _id: { $ne: objectid(msg.target._id) } // Всі, крім обраного об'єкта\n};\nmsg.payload = {\n    $set: {\n        selected: false\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 770,
+        "y": 400,
+        "wires": [
+            [
+                "35382b479daaa177"
+            ]
+        ]
+    },
+    {
+        "id": "35382b479daaa177",
+        "type": "link call",
+        "z": "505de08b963b3a23",
+        "g": "7a97228176a3408a",
+        "name": "",
+        "links": [
+            "4858d251cc2afe5c"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 960,
+        "y": 400,
+        "wires": [
+            [
+                "ed6187075b52d3e1"
+            ]
+        ]
+    },
+    {
+        "id": "1774755670398181",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "name": "generateVideoWithUserAvatar",
+        "func": "const BASE_URL = \"https://api.d-id.com/talks\";\nconst content = msg.response[0].message.content;\nconst key = global.get('botCredential').d_idKey;\nconst voice = global.get('botCredential').elevenlabsVoice;\nconst avatar = msg.payload[0].thumbnail_url;\n\nmsg.method = 'POST';\nmsg.headers = {\n    'Content-Type': 'application/json',\n    \"accept\": \"application/json\",\n    \"Authorization\": `Basic ${key}`\n};\nmsg.url = `${BASE_URL}`;\nmsg.payload = {\n    \"script\": {\n        \"type\": \"text\",\n        \"provider\": { \"type\": 'elevenlabs', \"voice_id\": voice },\n        \"input\": content\n    },\n    \"config\": { \"result_format\": 'mp4', \"stitch\": true },\n    \"source_url\": avatar,\n    \"user_data\": JSON.stringify(msg.telegram.chatId),\n    \"webhook\": `${env.get(\"NODEREDURL\")}/webhook`,\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 520,
+        "wires": [
+            [
+                "ba5d465b29f3fa2d"
+            ]
+        ]
+    },
+    {
+        "id": "ba5d465b29f3fa2d",
+        "type": "http request",
+        "z": "505de08b963b3a23",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1250,
+        "y": 520,
+        "wires": [
+            [
+                "37cda1813d2152f7"
+            ]
+        ]
+    },
+    {
+        "id": "37cda1813d2152f7",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "name": "statusCode",
+        "func": "if (msg.statusCode == 201) {\n    msg.clip = msg.payload;\n    msg.payload = {\n        type: 'message',\n        content: 'The video is being processed, you need to wait a bit...',\n        chatId: msg.userData.chatId,\n        \n    }\n\n    return msg;\n} else {\n    const error = global.get('botCredential').error;\n    msg.payload = {\n        type: 'message',\n        content: error,\n        chatId: msg.userData.chatId\n    }\n\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1410,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60e758bdcc29e6e9",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "name": "findAvatar",
+        "func": "msg.collection = 'avatars';\nmsg.response = msg.payload.choices;\nmsg.payload = {\n    deleted: false,\n    selected: true\n};\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 540,
+        "wires": [
+            [
+                "efb05de0f2937f9c"
+            ]
+        ]
+    },
+    {
+        "id": "efb05de0f2937f9c",
+        "type": "link call",
+        "z": "505de08b963b3a23",
+        "name": "",
+        "links": [
+            "2ea4d611b4476b64"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 610,
+        "y": 540,
+        "wires": [
+            [
+                "3c25ab7e2f53a0b0"
+            ]
+        ]
+    },
+    {
+        "id": "abc581cd9b9b870f",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "name": "generateVideoWithActor",
+        "func": "const BASE_URL = \"https://api.d-id.com/clips\";\nconst content = msg.response[0].message.content;\nconst avatar = global.get('botCredential').d_idAvatar;\nconst key = global.get('botCredential').d_idKey;\nconst voice = global.get('botCredential').elevenlabsVoice;\n\nmsg.method = 'POST';\nmsg.headers = {\n    \"content-type\": 'application/json',\n    \"accept\": \"application/json\",\n    \"Authorization\": `Basic ${key}`\n};\n\nmsg.payload = {\n    \"script\": {\n        \"type\": 'text',\n        \"provider\": { \"type\": 'elevenlabs', \"voice_id\": voice },\n        \"input\": content\n    },\n    \"config\": { \"result_format\": 'mp4' },\n    \"presenter_id\": avatar,\n    \"user_data\": JSON.stringify(msg.telegram.chatId),\n    \"webhook\": `${env.get(\"NODEREDURL\")}/webhook`,\n    \"background\": {\n        \"color\": \"#ffffff\"\n    }\n}\nmsg.url = `${BASE_URL}`;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 580,
+        "wires": [
+            [
+                "d5fb326a99a8ce0f"
+            ]
+        ]
+    },
+    {
+        "id": "d5fb326a99a8ce0f",
+        "type": "http request",
+        "z": "505de08b963b3a23",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1250,
+        "y": 580,
+        "wires": [
+            [
+                "553f27f322d99414"
+            ]
+        ]
+    },
+    {
+        "id": "553f27f322d99414",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "name": "statusCode",
+        "func": "if (msg.statusCode == 201) {\n    msg.clip = msg.payload;\n    msg.payload = {\n        type: 'message',\n        content: 'The video is being processed, you need to wait a bit...',\n        chatId: msg.userData.chatId\n    }\n\n    return msg;\n} else {\n    const error = global.get('botCredential').error;\n    msg.payload = {\n        type: 'message',\n        content: error,\n        chatId: msg.userData.chatId\n    }\n\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1410,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3c25ab7e2f53a0b0",
+        "type": "switch",
+        "z": "505de08b963b3a23",
+        "name": "typeOfAvatar",
+        "property": "payload[0].source",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "user",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "d_id",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 770,
+        "y": 540,
+        "wires": [
+            [
+                "1774755670398181"
+            ],
+            [
+                "abc581cd9b9b870f"
+            ]
+        ]
+    },
+    {
+        "id": "2b1c160de187a01c",
+        "type": "http in",
+        "z": "505de08b963b3a23",
+        "name": "",
+        "url": "/webhook",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 700,
+        "wires": [
+            [
+                "555f3438022890c1",
+                "d41469a92ec47721"
+            ]
+        ]
+    },
+    {
+        "id": "555f3438022890c1",
+        "type": "http response",
+        "z": "505de08b963b3a23",
+        "name": "ok",
+        "statusCode": "201",
+        "headers": {},
+        "x": 350,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "d41469a92ec47721",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "name": "sendVideoToTelegram",
+        "func": "if (msg.payload.status == 'done') {\n    msg.url = `https://api.telegram.org/bot${global.get('botCredential').botToken}/sendVideo`;\n    msg.headers = {\n        \"content-type\": \"application/json\"\n    }\n    msg.payload = {\n        video: `${msg.payload.result_url}/videos?filename=videoresponse&bred=s`,\n        chat_id: JSON.parse(msg.payload.user_data),\n        type: 'video_note'\n    }\n   \n\n    return [msg, null]\n} else {\n    const error = global.get('botCredential').error;\n    msg.payload = {\n        type: 'message',\n        content: error,\n        chatId: JSON.parse(msg.payload.user_data)\n    }\n\n    return [null, msg]\n}\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 700,
+        "wires": [
+            [
+                "68868b7d2c3dd751"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "68868b7d2c3dd751",
+        "type": "http request",
+        "z": "505de08b963b3a23",
+        "name": "",
+        "method": "POST",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 650,
+        "y": 680,
+        "wires": [
+            [
+                "16f9c3f7e3aa057c"
+            ]
+        ]
+    },
+    {
+        "id": "16f9c3f7e3aa057c",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "name": "statusCode",
+        "func": "if (msg.statusCode == 200) {\n    return null;\n} else {\n    const error = global.get('botCredential').error;\n    msg.payload = {\n        type: 'message',\n        content: error,\n        chatId: msg.userData.chatId,\n        \n    }\n\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    }
+]
