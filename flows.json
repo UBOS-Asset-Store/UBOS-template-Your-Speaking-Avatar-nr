@@ -46,7 +46,7 @@
         "fieldType": "msg",
         "format": "css",
         "syntax": "mustache",
-        "template": "::-webkit-scrollbar {\n  width: 0.1px;\n  scrollbar-color: #9bc7f38b;\n}\n.main_container {\n  top:0 !important;\n  left: 0 !important; \n  height: 100vh !important;\n  width: 100% !important;\n  padding: 10px !important;\n}\n\n.main_container>div>div>div>div>div>div>div>div>div>div>div>div>div{\n  display:flex;\n  justify-content: center;\n  align-items: center;\n  gap: 10px;\n}\n\n.main_container>div>div>div>div>div>div>div>div>div>div {\n  height:100% !important; \n}\n.form_container, .answer_container   {\n   position: relative !important;\n    top: 0 !important;\n    left: 0 !important;\n    max-height: 95vh !important;\n  background-image: linear-gradient(180deg, #ffffff 25%, #b0d0f1 100%) !important;\n  padding: 0px !important;\n  border-radius: 10px !important;\n}\n\n.bp3-input, .select-button {\n    border-radius: 5px !important;\n    color: #231F20 !important;\n}\n.select-button span {\n    color: inherit !important;\n}\n\n.generate_btn span{\n    color: #FFFFFF !important;\n}\n.answer_container>div {\n  border-radius: 10px;\n  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 4px 3px !important;\n}\n.answer_container>div>div>div>div>div>div>div {\n  border-radius: 10px;\n  padding: 7px !important;\n  \n}\n\n.add_btn button:hover {\n  background-color: #52ACFF !important;\n}\n\n.actors_item_container:hover > div > div > div > div > div > div> div > div > div > div > div > div > div > div.delete_avatar_btn button {\n  z-index: 1 !important;\n  opacity: 1 !important;\n}\n\n\n\n/* .form_container .actors_list {\n  height: clamp(170px, 17vw, 270px) !important;\n} */\n\n.actors_list .custom-wrapper-canvas-list{\n  display: flex !important;\n  flex-direction: row !important;\n  justify-content: center !important;\n  align-items: center !important;\n  flex-wrap: wrap !important;\n  \n}\n\n.actors_list .actors_item_container .actor {\n  border: 2px solid #eceff192 !important;\n  border-radius: 50% !important;\n  height: 120px !important;\n  width: 120px !important;\n  padding-left: 0px !important;\n  padding-right: 0px !important;\n  top:0px !important;\n  left:0px !important;\n}\n.actors_list .actors_item_container .actor:hover{\n  border: 2px solid #fa882e !important;\n}\n.actors_list .actors_item_container .selected_actor {\n  border: 2px solid #fa882e !important;\n  border-radius: 50% !important;\n  height: 120px !important;\n  width: 120px !important;\n  padding-left: 0px !important;\n  padding-right: 0px !important;\n \n}\n.actors_list .actor>div>div>div>div>div>div>div {\nborder-radius: 50% !important;\n}\n.actors_list .bp3-icon-plus{\n    display: none !important;\n}\n.actors_list.actors_item_container>div>div>div>div>div>div>div>div>div>div>button{\n    display: none !important;\n}\n\n.form_container .actors_list .actors_item_container{\n    width: 150px !important;\n    height:150px !important;\n}\n.form_container .actors_list .actors_item_container>div>div>div>div>div>div>div>div>div>div>div>div>div{\n    position:relative !important;\n    \n}\n\n",
+        "template": "::-webkit-scrollbar {\n  width: 0.1px;\n  scrollbar-color: #9bc7f38b;\n}\n.main_container {\n  top:0 !important;\n  left: 0 !important; \n  height: 100vh !important;\n  width: 100% !important;\n  padding: 0px !important;\n}\n\n.main_container>div>div>div>div>div>div>div>div>div>div>div>div>div{\n  display:flex;\n  justify-content: center;\n  align-items: center;\n  gap: 10px;\n}\n\n.main_container>div>div>div>div>div>div>div>div>div>div {\n  height:100% !important; \n}\n.form_container, .answer_container   {\n    position: relative !important;\n    top: 0 !important;\n    left: 0 !important;\n    max-height: 95vh !important;\n    background-image: linear-gradient(180deg, #ffffff 25%, #b0d0f1 100%) !important;\n    padding: 0px !important;\n    border-radius: 10px !important;\n}\n\n.bp3-input, .select-button {\n    border-radius: 5px !important;\n    color: #231F20 !important;\n}\n.select-button span {\n    color: inherit !important;\n}\n\n.generate_btn span{\n    color: #FFFFFF !important;\n}\n.answer_container>div {\n  border-radius: 10px;\n  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 4px 3px !important;\n}\n.answer_container>div>div>div>div>div>div>div {\n  border-radius: 10px;\n  padding: 7px !important;\n  \n}\n\n.add_btn button:hover {\n  background-color: #52ACFF !important;\n}\n\n.actors_item_container:hover > div > div > div > div > div > div> div > div > div > div > div > div > div > div.delete_avatar_btn button {\n  z-index: 1 !important;\n  opacity: 1 !important;\n}\n\n.actors_list .custom-wrapper-canvas-list{\n  display: flex !important;\n  flex-direction: row !important;\n  justify-content: center !important;\n  align-items: center !important;\n  flex-wrap: wrap !important;\n  \n}\n\n.actors_list .actors_item_container .actor {\n  border: 2px solid #eceff192 !important;\n  border-radius: 50% !important;\n  height: 120px !important;\n  width: 120px !important;\n  padding-left: 0px !important;\n  padding-right: 0px !important;\n  top:0px !important;\n  left:0px !important;\n}\n.actors_list .actors_item_container .actor:hover{\n  border: 2px solid #fa882e !important;\n}\n.actors_list .actors_item_container .selected_actor {\n  border: 2px solid #fa882e !important;\n  border-radius: 50% !important;\n  height: 120px !important;\n  width: 120px !important;\n  padding-left: 0px !important;\n  padding-right: 0px !important;\n \n}\n.actors_list .actor>div>div>div>div>div>div>div {\nborder-radius: 50% !important;\n}\n.actors_list .bp3-icon-plus{\n    display: none !important;\n}\n.actors_list.actors_item_container>div>div>div>div>div>div>div>div>div>div>button{\n    display: none !important;\n}\n\n.form_container .actors_list .actors_item_container{\n    width: 150px !important;\n    height:150px !important;\n}\n.form_container .actors_list .actors_item_container>div>div>div>div>div>div>div>div>div>div>div>div>div{\n    position:relative !important;\n    \n}\n\n",
         "output": "str",
         "x": 270,
         "y": 40,
@@ -55,59 +55,6 @@
                 "bd563a0724955d05"
             ]
         ]
-    },
-    {
-        "id": "43bfe33e6a378328",
-        "type": "function",
-        "z": "505de08b963b3a23",
-        "name": "deleteAvatarById",
-        "func": "let avatars = global.get('avatars');\n\n// Assuming msg.payload contains the _id of the avatar to mark as deleted\nlet avatarId = msg.payload._id;\n\n// Find the index of the avatar in the array\nlet index = avatars.findIndex(avatar => avatar._id === avatarId);\n\n// If the avatar exists in the array\nif (index !== -1) {\n    // Set deleted to true for the found avatar\n    avatars[index].deleted = true;\n\n    // Update msg.payload to indicate the change\n    msg.payload = {\n        success: true,\n        message: `Avatar with ID ${avatarId} marked as deleted`\n    };\n\n    // Set the updated avatars array back to the global context\n    global.set('avatars', avatars);\n} else {\n    // If the avatar does not exist in the array\n    msg.payload = {\n        success: false,\n        message: `Avatar with ID ${avatarId} not found`\n    };\n}\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 350,
-        "y": 320,
-        "wires": [
-            [
-                "6e7b6a07eb0c5dc0",
-                "94ca3de04472cdb2"
-            ]
-        ]
-    },
-    {
-        "id": "a298efd64088f5a0",
-        "type": "http in",
-        "z": "505de08b963b3a23",
-        "name": "",
-        "url": "/deleteAvatar",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 128.119140625,
-        "y": 318.875,
-        "wires": [
-            [
-                "43bfe33e6a378328"
-            ]
-        ]
-    },
-    {
-        "id": "6e7b6a07eb0c5dc0",
-        "type": "http response",
-        "z": "505de08b963b3a23",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 530,
-        "y": 320,
-        "wires": []
     },
     {
         "id": "b570594b2c92e3c0",
@@ -157,8 +104,7 @@
         "y": 180,
         "wires": [
             [
-                "aa1e0752d37c7b39",
-                "9c5aec2349b97259"
+                "aa1e0752d37c7b39"
             ]
         ]
     },
@@ -172,7 +118,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 130,
-        "y": 260,
+        "y": 240,
         "wires": [
             [
                 "6c7d66aa5c729d7b"
@@ -191,11 +137,10 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 260,
+        "y": 240,
         "wires": [
             [
-                "e1a4a227148090a8",
-                "23ffb3d4244f7d5e"
+                "e1a4a227148090a8"
             ]
         ]
     },
@@ -207,7 +152,7 @@
         "statusCode": "",
         "headers": {},
         "x": 490,
-        "y": 260,
+        "y": 240,
         "wires": []
     },
     {
@@ -220,7 +165,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 130,
-        "y": 380,
+        "y": 300,
         "wires": [
             [
                 "44d601641c19f080"
@@ -234,8 +179,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 530,
-        "y": 380,
+        "x": 510,
+        "y": 300,
         "wires": []
     },
     {
@@ -255,34 +200,11 @@
             }
         ],
         "x": 340,
-        "y": 380,
+        "y": 300,
         "wires": [
             [
-                "23057f3bd718027a",
                 "ed6187075b52d3e1"
             ]
-        ]
-    },
-    {
-        "id": "93ace29d77f702db",
-        "type": "function",
-        "z": "505de08b963b3a23",
-        "name": "setSelectedFalse",
-        "func": "msg.multi = true;\nmsg.upsert = false;\nmsg.query = {\n    _id: { $ne: objectid(msg.target._id) } // Всі, крім обраного об'єкта\n};\nmsg.payload = {\n    $set: {\n        selected: false\n    }\n};\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 750,
-        "y": 380,
-        "wires": [
-            []
         ]
     },
     {
@@ -290,17 +212,16 @@
         "type": "function",
         "z": "505de08b963b3a23",
         "name": "generateVideoWithUserAvatar",
-        "func": "const BASE_URL = \"https://api.d-id.com/talks\";\nconst content = msg.userData.content;\nconst key = msg.userData.key;\nconst voice = msg.userData.voice;\nconst avatar = msg.payload.thumbnail_url;\n\nmsg.method = 'POST';\nmsg.headers = {\n    'Content-Type': 'application/json',\n    \"accept\": \"application/json\",\n    \"Authorization\": `Basic ${key}`\n};\nmsg.url = `${BASE_URL}`;\nmsg.payload = {\n    \"script\": {\n        \"type\": \"text\",\n        \"provider\": { \"type\": 'elevenlabs', \"voice_id\": voice },\n        \"input\": content\n    },\n    \"config\": { \"result_format\": 'mp4', \"stitch\": true },\n    \"source_url\": avatar,\n    \"webhook\": `${env.get(\"NODEREDURL\")}/webhook`,\n}\nglobal.set('video', '')\nreturn msg;",
+        "func": "const BASE_URL = \"https://api.d-id.com/talks\";\nconst content = msg.userData.content;\nconst key = msg.userData.key;\nconst voice = msg.userData.voice;\nconst avatar = msg.payload.thumbnail_url;\nmsg.id = String(Date.now());\nmsg.method = 'POST';\nmsg.headers = {\n    'Content-Type': 'application/json',\n    \"accept\": \"application/json\",\n    \"Authorization\": `Basic ${key}`\n};\nmsg.url = `${BASE_URL}`;\nmsg.payload = {\n    \"script\": {\n        \"type\": \"text\",\n        \"provider\": { \"type\": 'elevenlabs', \"voice_id\": voice },\n        \"input\": content\n    },\n    \"user_data\": msg.id,\n    \"config\": { \"result_format\": 'mp4', \"stitch\": true },\n    \"source_url\": avatar,\n    \"webhook\": `${env.get(\"NODEREDURL\")}/webhook`,\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 750,
-        "y": 480,
+        "y": 360,
         "wires": [
             [
-                "bf650d82e7a7bc05",
                 "ba5d465b29f3fa2d"
             ]
         ]
@@ -322,11 +243,10 @@
         "senderr": false,
         "headers": [],
         "x": 990,
-        "y": 480,
+        "y": 360,
         "wires": [
             [
-                "9064c41b92200575",
-                "042fe42819c7d1e4"
+                "b1ed565c7e22ae0a"
             ]
         ]
     },
@@ -335,18 +255,17 @@
         "type": "function",
         "z": "505de08b963b3a23",
         "name": "findAvatar",
-        "func": "let avatars = global.get('avatars');\nmsg.userData = msg.payload;\nmsg.response = msg.payload.choices;\n\nlet targetAvatarId = msg.payload.avatar.toString(); \n\n\nlet selectedAvatar = avatars.find(avatar => (avatar.presenter_id).toString() === targetAvatarId);\n\nif (selectedAvatar) {\n    \n    msg.payload = selectedAvatar;\n} else {\n    \n    msg.payload = {\n        error: 'Avatar not found'\n    };\n}\n\nreturn msg;\n",
+        "func": "let avatars = global.get('avatars');\nmsg.userData = msg.payload;\nmsg.response = msg.payload.choices;\n\nlet targetAvatarId = msg.payload.avatar.toString(); \n\n\nlet selectedAvatar = avatars.find(avatar => (avatar.presenter_id).toString() === targetAvatarId);\n// let selectedAvatar = avatars.find(avatar => avatar.selected === true);\n// let selectedAvatar = msg.userData.avatar.selected;\nif (selectedAvatar) {\n    \n    msg.payload = selectedAvatar;\n} else {\n    \n    msg.payload = {\n        error: 'Avatar not found'\n    };\n}\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 500,
+        "y": 380,
         "wires": [
             [
-                "3c25ab7e2f53a0b0",
-                "5c295483dd3eb7bf"
+                "3c25ab7e2f53a0b0"
             ]
         ]
     },
@@ -355,17 +274,16 @@
         "type": "function",
         "z": "505de08b963b3a23",
         "name": "generateVideoWithActor",
-        "func": "const BASE_URL = \"https://api.d-id.com/clips\";\n\nconst avatar = msg.payload.presenter_id;\nconst content = msg.userData.content;\nconst key = msg.userData.key;\nconst voice = msg.userData.voice;\n\nmsg.method = 'POST';\nmsg.headers = {\n    \"content-type\": 'application/json',\n    \"accept\": \"application/json\",\n    \"Authorization\": `Basic ${key}`\n};\n\nmsg.payload = {\n    \"script\": {\n        \"type\": 'text',\n        \"provider\": { \"type\": 'elevenlabs', \"voice_id\": voice },\n        \"input\": content\n    },\n    \"config\": { \"result_format\": 'mp4' },\n    \"presenter_id\": avatar,\n   \n    \"webhook\": `${env.get(\"NODEREDURL\")}/webhook`,\n    \"background\": {\n        \"color\": \"#ffffff\"\n    }\n}\nmsg.url = `${BASE_URL}`;\nglobal.set('video', '')\nreturn msg;",
+        "func": "const BASE_URL = \"https://api.d-id.com/clips\";\n\nconst avatar = msg.payload.presenter_id;\nconst content = msg.userData.content;\nconst key = msg.userData.key;\nconst voice = msg.userData.voice;\nmsg.id = String(Date.now());\n\nmsg.method = 'POST';\nmsg.headers = {\n    \"content-type\": 'application/json',\n    \"accept\": \"application/json\",\n    \"Authorization\": `Basic ${key}`\n};\n\nmsg.payload = {\n    \"script\": {\n        \"type\": 'text',\n        \"provider\": { \"type\": 'elevenlabs', \"voice_id\": voice },\n        \"input\": content\n    },\n    \"config\": { \"result_format\": 'mp4' },\n    \"presenter_id\": avatar,\n    \"user_data\": msg.id,\n    \"webhook\": `${env.get(\"NODEREDURL\")}/webhook`,\n    \"background\": {\n        \"color\": \"#ffffff\"\n    }\n}\nmsg.url = `${BASE_URL}`;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 730,
-        "y": 540,
+        "y": 420,
         "wires": [
             [
-                "ae2c17e5036485f5",
                 "d5fb326a99a8ce0f"
             ]
         ]
@@ -387,11 +305,10 @@
         "senderr": false,
         "headers": [],
         "x": 990,
-        "y": 540,
+        "y": 420,
         "wires": [
             [
-                "9064c41b92200575",
-                "042fe42819c7d1e4"
+                "b1ed565c7e22ae0a"
             ]
         ]
     },
@@ -418,15 +335,13 @@
         "repair": false,
         "outputs": 2,
         "x": 510,
-        "y": 500,
+        "y": 380,
         "wires": [
             [
-                "1774755670398181",
-                "90aae4d19aeb4ad7"
+                "1774755670398181"
             ],
             [
-                "abc581cd9b9b870f",
-                "e973300ae7a69a28"
+                "abc581cd9b9b870f"
             ]
         ]
     },
@@ -440,11 +355,10 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 120,
-        "y": 600,
+        "y": 480,
         "wires": [
             [
-                "d41469a92ec47721",
-                "10dfc1f2ea4a3590"
+                "d41469a92ec47721"
             ]
         ]
     },
@@ -458,7 +372,7 @@
             "content-type": "video/mp4"
         },
         "x": 530,
-        "y": 600,
+        "y": 480,
         "wires": []
     },
     {
@@ -466,88 +380,19 @@
         "type": "function",
         "z": "505de08b963b3a23",
         "name": "sendVideo",
-        "func": "if (msg.payload.status == 'done') {\n  let video = msg.payload.result_url;\n  \n  global.set('video',msg.payload.result_url);\n  msg.payload = video;\n   return msg\n} else {\n  // msg.payload = 'https://d-id-talks-prod.s3.us-west-2.amazonaws.com/google-oauth2%7C102883741232899607695/tlk_Sy0fzUTTpRqh6SjTrxNNt/1709312196561.mp4?AWSAccessKeyId=AKIA5CUMPJBIK65W6FGA&Expires=1709398599&Signature=zY7dpAICRCqTtMCVXDXrgnH101o%3D'\n  msg.payload = null\n  return msg\n}\n",
+        "func": "if (msg.payload.status == 'done') {\n \n \n  global.set(msg.payload.user_data, msg.payload.result_url)\n  msg.payload = msg.payload.result_url;\n  \n} else {\n  msg.payload = null\n  \n}\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 600,
+        "y": 480,
         "wires": [
             [
-                "555f3438022890c1",
-                "ced94e8df38dc9be"
+                "555f3438022890c1"
             ]
         ]
-    },
-    {
-        "id": "9c5aec2349b97259",
-        "type": "debug",
-        "z": "505de08b963b3a23",
-        "name": "debug 1",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 520,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "94ca3de04472cdb2",
-        "type": "debug",
-        "z": "505de08b963b3a23",
-        "name": "debug 2",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 620,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "23057f3bd718027a",
-        "type": "debug",
-        "z": "505de08b963b3a23",
-        "name": "debug 3",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 540,
-        "y": 420,
-        "wires": []
-    },
-    {
-        "id": "23ffb3d4244f7d5e",
-        "type": "debug",
-        "z": "505de08b963b3a23",
-        "name": "debug 4",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 500,
-        "y": 220,
-        "wires": []
     },
     {
         "id": "9e2c5ec10d494689",
@@ -589,7 +434,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
+        "x": 360,
         "y": 120,
         "wires": [
             []
@@ -605,114 +450,12 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 140,
-        "y": 500,
+        "y": 380,
         "wires": [
             [
                 "60e758bdcc29e6e9"
             ]
         ]
-    },
-    {
-        "id": "ced94e8df38dc9be",
-        "type": "debug",
-        "z": "505de08b963b3a23",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 540,
-        "y": 680,
-        "wires": []
-    },
-    {
-        "id": "5c295483dd3eb7bf",
-        "type": "debug",
-        "z": "505de08b963b3a23",
-        "name": "debug 6",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 380,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "90aae4d19aeb4ad7",
-        "type": "debug",
-        "z": "505de08b963b3a23",
-        "name": "debug 7",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 760,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "e973300ae7a69a28",
-        "type": "debug",
-        "z": "505de08b963b3a23",
-        "name": "debug 8",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 720,
-        "y": 600,
-        "wires": []
-    },
-    {
-        "id": "bf650d82e7a7bc05",
-        "type": "debug",
-        "z": "505de08b963b3a23",
-        "name": "debug 9",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 980,
-        "y": 420,
-        "wires": []
-    },
-    {
-        "id": "ae2c17e5036485f5",
-        "type": "debug",
-        "z": "505de08b963b3a23",
-        "name": "debug 10",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 980,
-        "y": 580,
-        "wires": []
     },
     {
         "id": "c4fb00965cc02703",
@@ -723,12 +466,11 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 140,
-        "y": 780,
+        "x": 120,
+        "y": 540,
         "wires": [
             [
-                "7a40195f3eab5349",
-                "b86062ce186e0e31"
+                "7a40195f3eab5349"
             ]
         ]
     },
@@ -737,17 +479,16 @@
         "type": "function",
         "z": "505de08b963b3a23",
         "name": "download",
-        "func": "msg.url = global.get('video');\n\nreturn msg;\n",
+        "func": "msg.url = global.get(msg.payload.id);\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 780,
+        "x": 300,
+        "y": 540,
         "wires": [
             [
-                "d29319c6cd4c5e71",
                 "9a4e91052d8ad0fe"
             ]
         ]
@@ -768,11 +509,10 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 490,
-        "y": 780,
+        "x": 470,
+        "y": 540,
         "wires": [
             [
-                "591ba8033a63b728",
                 "bc2b13e47e8986bb"
             ]
         ]
@@ -784,8 +524,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 870,
-        "y": 780,
+        "x": 850,
+        "y": 540,
         "wires": []
     },
     {
@@ -799,116 +539,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 780,
+        "x": 660,
+        "y": 540,
         "wires": [
             [
-                "c3fc76214cee2a61",
                 "9e81929266e7566d"
             ]
         ]
-    },
-    {
-        "id": "b86062ce186e0e31",
-        "type": "debug",
-        "z": "505de08b963b3a23",
-        "name": "debug11",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 160,
-        "y": 840,
-        "wires": []
-    },
-    {
-        "id": "d29319c6cd4c5e71",
-        "type": "debug",
-        "z": "505de08b963b3a23",
-        "name": "debug 12",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 360,
-        "y": 840,
-        "wires": []
-    },
-    {
-        "id": "591ba8033a63b728",
-        "type": "debug",
-        "z": "505de08b963b3a23",
-        "name": "debug 13",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 520,
-        "y": 840,
-        "wires": []
-    },
-    {
-        "id": "c3fc76214cee2a61",
-        "type": "debug",
-        "z": "505de08b963b3a23",
-        "name": "debug 14",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 720,
-        "y": 840,
-        "wires": []
-    },
-    {
-        "id": "10dfc1f2ea4a3590",
-        "type": "debug",
-        "z": "505de08b963b3a23",
-        "name": "debug 15",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 200,
-        "y": 680,
-        "wires": []
-    },
-    {
-        "id": "9064c41b92200575",
-        "type": "debug",
-        "z": "505de08b963b3a23",
-        "name": "debug 16",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1160,
-        "y": 500,
-        "wires": []
     },
     {
         "id": "042fe42819c7d1e4",
@@ -917,8 +554,74 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1130,
-        "y": 420,
+        "x": 1310,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "b1ed565c7e22ae0a",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "name": "function 1",
+        "func": "msg.payload=msg.id\nlet avatars = global.get('avatars');\n\navatars.map(avatar => {\n   avatar.selected = false;\n});\nglobal.set('avatars', avatars)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 380,
+        "wires": [
+            [
+                "042fe42819c7d1e4"
+            ]
+        ]
+    },
+    {
+        "id": "42ead453c4779168",
+        "type": "http in",
+        "z": "505de08b963b3a23",
+        "name": "",
+        "url": "/check",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 110,
+        "y": 600,
+        "wires": [
+            [
+                "6fa716cc6eb6c8a8"
+            ]
+        ]
+    },
+    {
+        "id": "6fa716cc6eb6c8a8",
+        "type": "function",
+        "z": "505de08b963b3a23",
+        "name": "download",
+        "func": "let url = global.get(msg.payload.id);\nif (url){\n  msg.payload= {\n    url:url,\n    read:true\n  }\n}else{\n  msg.payload = {\n    url: null,\n    read: false\n  }\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 600,
+        "wires": [
+            [
+                "81d606214541e602"
+            ]
+        ]
+    },
+    {
+        "id": "81d606214541e602",
+        "type": "http response",
+        "z": "505de08b963b3a23",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 470,
+        "y": 600,
         "wires": []
     }
 ]
